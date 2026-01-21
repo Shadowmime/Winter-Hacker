@@ -1,10 +1,10 @@
 [gd_scene load_steps=10 format=3 uid="uid://dwmhxf24nkryy"]
 
 [ext_resource type="Script" uid="uid://d1kgmhgig5vwx" path="res://Screens/Game.gd" id="1_awhwq"]
-[ext_resource type="Texture2D" uid="uid://nkyhp72em884" path="res://icon.svg" id="2_plu8p"]
 [ext_resource type="Script" uid="uid://ckx6uq8775bcx" path="res://Screens/player.gd" id="2_tban2"]
-[ext_resource type="Texture2D" uid="uid://bu2bh3ppykvq7" path="res://Assets/tempcomputer.webp" id="3_4x0cx"]
-[ext_resource type="Texture2D" uid="uid://cw1w6q60bnr15" path="res://Assets/tempfireplace.webp" id="4_tban2"]
+[ext_resource type="Texture2D" uid="uid://dddcxyyd3qfgj" path="res://Assets/player_draft.png" id="3_410mh"]
+[ext_resource type="Texture2D" uid="uid://v65d812j7025" path="res://Assets/computer.png" id="4_6tqv4"]
+[ext_resource type="Texture2D" uid="uid://bja4oll2kr26e" path="res://Assets/fireplace_draft.png" id="5_xjwey"]
 [ext_resource type="Texture2D" uid="uid://du74fntr3vmdm" path="res://Assets/firewood.jpg" id="6_410mh"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_410mh"]
@@ -33,7 +33,7 @@ position = Vector2(167, 348)
 script = ExtResource("2_tban2")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
-texture = ExtResource("2_plu8p")
+texture = ExtResource("3_410mh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 shape = SubResource("CircleShape2D_410mh")
@@ -47,15 +47,13 @@ offset_left = 41.0
 offset_top = 18.0
 offset_right = 515.0
 offset_bottom = 492.0
-scale = Vector2(0.5, 0.5)
-texture_normal = ExtResource("3_4x0cx")
+texture_normal = ExtResource("4_6tqv4")
 
 [node name="Fireplace" type="TextureButton" parent="Actionables"]
 offset_left = 733.0
 offset_right = 1207.0
 offset_bottom = 474.0
-scale = Vector2(0.5, 0.5)
-texture_normal = ExtResource("4_tban2")
+texture_normal = ExtResource("5_xjwey")
 
 [node name="Area2D" type="Area2D" parent="Actionables/Fireplace"]
 position = Vector2(244, 234)
